@@ -1,0 +1,12 @@
+import datetime
+#main part of exercise
+name = input("Please input Your name: ")
+age = int(input("Please input Your age: "))
+current_year = datetime.datetime.now().year
+msg_for_user = "Hi, {}, You will be 100 years old in {}".format(name, current_year+100-age)
+print(msg_for_user)
+
+#additional part of exercise
+i = int(input("Please enter a number: "))
+msg_for_user += "\n"
+print(msg_for_user*i)
