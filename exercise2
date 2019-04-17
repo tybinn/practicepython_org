@@ -1,0 +1,21 @@
+user_number = int(float(input("Please input a number: ")))
+rest = user_number % 2
+
+if rest == 1:
+    msg_for_user = "odd"
+else:
+    msg_for_user = "even"
+
+msg_for_user = "Your number is {}.".format(msg_for_user)
+
+print(msg_for_user)
+
+if user_number%4 == 0:
+    print("Wow, Your nuber is also multiple of 4!")
+
+num = int(float(input("Ok, now please give me a number: ")))
+check = int(float(input("And another one, to check if the first number is divide by it: ")))
+if num%check == 0:
+    print("Yeah, number {} is divisible  by {}".format(num, check))
+else:
+    print("Nope, numb1er {} i`1sn\'t divisible by {}".format(num, check))
