@@ -1,0 +1,13 @@
+# 1. main part of exercise
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+final_list = []
+for i in a:
+    if i < 5:
+        final_list.append(i)
+print(final_list)
+
+# 3. user imput
+usr_num = int(input('Please input number: '))
+
+# 2. all code in one line and rest of point 3
+print(list(filter(lambda x: (x < usr_num) , a)))
