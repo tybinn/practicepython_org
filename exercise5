@@ -1,0 +1,16 @@
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+print(set(a).intersection(set(b)))
+
+# 1. randomly generated list
+
+import random
+
+a1 = random.sample(range(1, 100), int(input('Please input lenght of first list: ')))
+b1 = random.sample(range(1, 100), int(input('Please input lenght of second list: ')))
+
+print(a1)
+print(b1)
+
+print('Intersection of two previous randomly generated list: ' + str(set(a1).intersection(set(b1))))
