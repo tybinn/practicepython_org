@@ -1,0 +1,24 @@
+GoodInputs = ['rock', 'scissors', 'paper']
+
+def checkresults(input1, input2):
+    #function have rules of the game and print who wins
+    if input1==input2:
+        print('Draw.')
+    elif (input1 == GoodInputs[0] and input2 == GoodInputs[1]) or (input1 == GoodInputs[1] and input2 == GoodInputs[2]) or (input1 == GoodInputs[2] and input2 == GoodInputs[0]):
+        print("Player 1 wins! Congratulations!")
+    else:
+        print("Player 2 wins! Congratulations!")
+    return
+
+while True:
+    while True:
+        user1 = input('PLAYER 1: Please input Your choice [rock, paper or scissors]: ').lower()
+        user2 = input('PLAYER 2: Please input Your choice [rock, paper or scissors]: ').lower()
+        if (user1 in GoodInputs) and (user2 in GoodInputs):
+            break
+        else:
+            print('This is not proper values. Pleas write one of these: rock, paper or scissors.')
+    checkresults(user1, user2)
+    continuegame = input('Do You want play one more time [Y/N]: ').upper()
+    if continuegame != 'Y':
+        break
