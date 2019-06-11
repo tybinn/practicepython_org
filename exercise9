@@ -1,0 +1,20 @@
+import random
+def compare_num(x, usr_x):
+    if x == usr_x:
+        print("Thats good number!")
+        return True
+    elif x>usr_x:
+        print('Your number is too low.')
+    else:
+        print('Your number is too high')
+
+number = random.randint(1,10)
+num_try = 0
+while True:
+    usr_guess = input('Please try guess the number I have generated: ')
+    if usr_guess.lower() == 'exit':
+        break
+    num_try += 1
+    if compare_num(number, int(usr_guess)) == True:
+        print('You find correct number in {} attempt.'.format(num_try))
+        break
