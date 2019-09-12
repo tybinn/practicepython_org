@@ -1,0 +1,12 @@
+def checkifisprimal(inputtxt = 'Please provide numver: '):
+    divisors = []
+    usr_num = int(input(inputtxt))
+    for i in  range(1, usr_num):
+        if usr_num%i == 0:
+            divisors.append(i)
+    if len(divisors) > 2:
+        return 'number {} is not prime.'.format(usr_num)
+    else:
+        return 'number {} is prime.'.format(usr_num)
+
+print(checkifisprimal())
