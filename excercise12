@@ -1,0 +1,12 @@
+a = [5, 10, 15, 20, 25]
+
+def firstandlast(itm):
+    if len(itm) > 0:
+        newlist = []
+        newlist.append(itm[0])
+        newlist.append(itm[len(itm)-1])
+        return newlist
+    else:
+        return 0
+
+print(firstandlast(a))
